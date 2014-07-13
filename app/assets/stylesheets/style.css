@@ -1,0 +1,709 @@
+
+
+*{
+	margin: 0px;
+	margin-top: 0px;
+}
+
+body{
+	margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+	background-color: #ffffff;
+	background-image:url("Background.gif");
+	background-attachment: fixed;
+}
+
+#wrapper{
+	width: 100%;
+    max-width: 990px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 50px;
+	background-color: rgba(0,0,0,0);
+	
+}
+
+
+header{
+    width: 100%;
+    height: 175px;
+    margin-top: -30px;
+    box-shadow: 0 0 2px #000;
+    background-image:url("header.gif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-position: bottom;
+}
+
+#logo{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image:url("logolarge.png");
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.top-ad{
+    height: 100%;
+    min-height: 10px;
+    max-height: 50px;
+    margin-top: -20px;
+	background-color: #fff;
+	box-shadow: 0 0 2px #000;
+}
+
+#content1{
+	width: 100%;
+	box-shadow: 0 0 2px #000;
+	background-color:#fff;
+	margin-top: 55px;
+}
+
+#content img{
+    width: 1025px;
+    margin-left: -100px;
+}
+
+#slider_box{
+    width: 100%;
+    margin-top: 20px;
+	margin-left: -122px;
+}
+
+#mail-back{
+    width: 250px;
+    height: 170px;
+    background-size: 250px 170px;
+    margin-top: 0px;
+    margin-right: 1.1%;
+    margin-left: 3%;
+    background-color: #FFF;
+    box-shadow: 0 0 2px #000;
+    float: left;
+}
+
+#paper{
+    width: 250px;
+    height: 170px;
+    background-size: 250px 170px;
+    background-image: url("OuterEnvelope.png");
+    float: left;
+}
+
+#outer-envelope{
+    width: 250px;
+    height: 130px;
+    margin-top: 10px;
+    background-size: 250px 170px;
+    background-image: url("Paper.gif");
+    position: static;
+}
+
+#envelope-open{
+    width: 250px;
+    height: 48px;
+    margin-top: -48px;
+    z-index:-1;
+    position:absolute;
+    background-size: 250px 110px;
+    background-image: url("EnvelopeOpen.png");
+    display: none;
+}
+
+#envelope-closed{
+    width: 250px;
+    height: 110px;
+    position: absolute;
+    background-size: 250px 110px;
+    background-image: url("EnvelopeClosed.png");
+    display: block;
+}
+
+#paper h4{
+    margin-left: 75px;
+    margin-top: 5px;
+    font-family: "Marker Felt";
+    font-size: 20px;
+    color: #000;
+}
+
+#envelope-closed:hover{
+    display: none;
+}
+
+#envelope-closed:hover ~ #envelope-open {
+    display: block;
+}
+
+#envelope-closed:hover ~ #outer-envelope{
+    margin-top: -25px;
+}
+
+#box-center{
+    height: 200px;
+    width: 450px;
+    margin-top: -20px;
+    margin-left: 17px;
+    background-color: #fff;
+    background-image: url("Yelp-Background.png");
+    box-shadow: 0 0 2px #000;
+    float: left;
+}
+
+#yelp-box{
+    width: 409px;
+    height: 161px;
+    margin-left: 19px;
+    margin-top: 18px;
+    background-color:#FFF;
+    border: .5px solid rgba(0, 0, 0, .5);
+    box-shadow: inset 0px 0px 2px #000;
+}
+
+#yelp-logo{
+    margin-left: 12px;
+    margin-top: 36px;
+    padding-right: 5px;
+    background-image: url("yelp-logo.jpg")  ;
+    background-size: 100% 100%;
+    width :150px;
+    height :90px ;
+}
+#yelpwidget{
+    float: right;
+    margin-top: 25px;
+    margin-right: 10px;
+    font-family: "Champagne & Limousines";
+}
+
+#box-right-top{
+    height: 50px;
+    width: 175px;
+    margin-bottom: 0px;
+    margin-top: -20px;
+    margin-left: 16px;
+    background-color: #375794;
+    box-shadow: 0 0 2px #000;
+    background-image:url("facebookbig.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+#box-right-center{
+    height: 50px;
+    width: 175px;
+    margin-top: 25px;
+    margin-left: 16px;
+    background-color: #FFF;
+    box-shadow: 0 0 2px #000;
+    background-image:url("instagrambig.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+
+#box-right-bottom{
+    height: 50px;
+    width: 175px;
+    margin-top: 25px;
+    margin-left: 16px;
+    background-color: #33ccff;
+    box-shadow: 0 0 2px #000;
+    background-image:url("twitterbig.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    margin-top: 1px;
+    background: #cc0000;
+    font-size: 11pt;
+    font-family: "Champagne & Limousines";
+    position: relative;
+    box-shadow: 0 0 2px #000;
+}
+nav ul {
+    padding: 0px;
+    margin-left: 0px;
+    width: 600px;
+    height: 40px;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+#socialicon {
+    margin-left: 1%;
+    margin-top: 140px;
+    float: right;
+}
+
+#iconposition{
+    margin-right: 5px;
+    padding-bottom: 10px;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+nav a {
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+nav li a {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+    border-right: 0;
+}
+
+nav a:hover, nav a:active {
+    background-color: #4e4e4e;
+}
+
+nav a#pull {
+    display: none;
+}
+
+.clearfixfoot:before,
+.clearfixfoot:after {
+    content: " ";
+    display: table;
+}
+
+@media screen and (max-width: 1100px) {
+
+    #box-center {
+        margin-left: 5%;
+    }
+
+    #box-right-top{
+        width: 200px;
+        margin-left: 15%;
+        margin-top: 30px;
+    }
+
+    #box-right-center{
+        width: 200px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    #box-right-bottom{
+        width: 200px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    #mail-back {
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #mail-back {
+        margin-left: 4%;
+    }
+    #box-right-top{
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    #mail-back {
+        margin-left: 3%;
+    }
+    #box-right-top{
+        margin-left: 6%;
+    }
+}
+
+@media screen and (max-width: 840px){
+
+    #box-center {
+        margin-bottom: -300px;
+        margin-top: -410px;
+        margin-left: 15%;
+    }
+
+    #mail-back {
+        margin-top: 230px;
+        margin-left: 5%;
+    }
+
+    #box-right-top{
+        width: 250px;
+        margin-left: 55%;
+        margin-top: -180px;
+    }
+
+    #box-right-center{
+        width: 250px;
+        margin-left: 55%;
+        margin-top: -115px;
+    }
+
+    #box-right-bottom{
+        width: 250px;
+        margin-left: 55%;
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        height: auto;
+    }
+    nav ul {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    nav li a {
+        border-bottom: 1px solid #000;
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+
+    #box-center{
+        margin-left: 9%;
+    }
+
+    #mail-back {
+        margin-left: 2%;
+    }
+
+    #logo{
+        background: url("logomedium.png") no-repeat;
+    }
+
+    #box-right-top{
+        width: 225px;
+        margin-top: -180px;
+        margin-left: 55%;
+    }
+
+    #box-right-center{
+        width: 225px;
+        margin-top: -110px;
+        margin-left: 55%;
+    }
+
+    #box-right-bottom{
+        width: 225px;
+        margin-top: -40px;
+        margin-left: 55%;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    #box-center{
+        width: 100%;
+        background-size: 100% 200px;
+        margin-left: 0%;
+    }
+
+    #yelp-box{
+        width: 91%;
+    }
+
+    #mail-back {
+        margin-left: 25%;
+    }
+
+    #box-right-top{
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 0%;
+    }
+
+    #box-right-center{
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0%;
+    }
+
+    #box-right-bottom{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    nav {
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #cc0000;
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull:after {
+        content:"";
+        background: url('nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+    }
+
+    #logo{
+        margin-bottom: -500px;
+        margin-left: 3%;
+        background-image:url("logosmall.png");
+    }
+
+    #yelp-box{
+        width: 90%;
+    }
+
+    #yelpwidget{
+        margin-right: 14%;
+    }
+
+    #yelp-logo{
+        display: none;
+    }
+
+    #mail-back {
+        margin-left: 20%;
+    }
+
+}
+
+
+
+@media only screen and (max-width : 400px) {
+
+    #mail-back {
+        margin-left: 16%;
+    }
+
+    #yelp-box{
+        width: 89%;
+    }
+
+    #yelpwidget{
+        margin-right: 9%;
+    }
+}
+
+@media only screen and (max-width : 370px) {
+    #mail-back {
+        margin-left: 9%;
+    }
+
+    #yelp-box{
+        width: 88%;
+    }
+
+    #yelpwidget{
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    nav li {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    nav li a {
+        border-bottom: 1px solid #000;
+    }
+
+    #yelp-box{
+        width: 91%;
+        margin-left: 4%;
+    }
+
+    #yelpwidget{
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    #mail-back{
+        margin-left: 2%;
+    }
+
+
+}
+
+#come_visit{
+	margin-top: 20px;
+	margin-bottom: -40px;
+	margin-left: 50px;
+    font-family: "Champagne & Limousines";
+	font-size: 35px;
+	width: 200px;
+	background-color: #fff;
+}
+
+#map_canvas {
+     width: 900px;
+     height: 450px;
+ 	 margin-left: 45px;
+	 margin-top: 50px;
+	 margin-bottom: 75px;
+   	 box-shadow: 0 0 2px #000;
+	 background-color: #FFF;
+}
+
+#about-paragraph p{
+	color:#6FCDDE;
+}
+
+#about{
+	width: 450px;
+	height: 35px;
+	margin-left: 230px;
+	margin-bottom: 25px;
+	margin-top: 40px;
+	font-family: "Champagne & Limousines";
+	font-size: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#about-paragraph{
+	width: 650px;
+
+	
+	margin-top: 40px;
+	margin-left: 110px;
+	margin-bottom: 50px;
+	font-family: "Champagne & Limousines";
+	font-size: 25px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	border: 15px solid rgba(0, 0, 0, .5);
+	background: #FFF;
+	
+	-moz-background-clip: border;     
+    -webkit-background-clip: border;  
+    background-clip: border-box;      
+				
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;  
+    background-clip: padding-box;       
+				
+    -moz-background-clip: content;
+    -webkit-background-clip: content;  
+    background-clip: padding-box;
+}
+
+#about-content-border{
+	width: 770px;
+	height: 650px;
+	
+}
+
+#sun-text{
+	margin-top: 20px;
+    font-family: "Champagne & Limousines";
+	font-size: 35px;
+	background-color: #fff;
+	width: 175px;
+	
+}
+
+#brand1{
+	width: 300px;
+	height:175px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-color: #fff;
+	box-shadow: 0 0 2px #000;
+	float: left;
+}
+
+#brand2{
+	width: 300px;
+	height:175px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 45px;
+	background-color: #fff;
+	box-shadow: 0 0 2px #000;
+	float: left;
+}
+
+#brand3{
+	width: 300px;
+	height:175px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 45px;
+	background-color: #fff;
+	box-shadow: 0 0 2px #000;
+	float: left;
+}
+
+#optical-text{
+	margin-top: 20px;
+    font-family: "Champagne & Limousines";
+	font-size: 35px;
+	background-color: #fff;
+	width: 225px;
+	
+}
+
+#limited-stock-item{
+	margin-left: 92px;
+	margin-top:-50px;
+}
+
+.slider { position: relative; overflow: auto; }
+.slider li { list-style: none; }
+.slider ul li { float: left; }
+
+.unslider-arrow.prev{
+    width: 100%;
+    background-image: url("arrows.png") ;
+}

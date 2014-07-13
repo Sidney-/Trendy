@@ -1,0 +1,231 @@
+<%= image_tag "header.gif", width:"100%", height:"100%", alt:"header"%>
+
+<%= image_tag "Trendy-Sunglasses-Logo.gif", width:"450%", height:"80%", alt:"logo" %>
+
+  <div id="nav-bar">
+
+    <nav>
+      <ul>
+        <li><%= link_to "HOME", root_path %></li>
+        <li>|</li>
+        <li><%= link_to "BRANDS", brands_path %></li>
+        <li>|</li>
+        <li><%= link_to "ABOUT" ,about_path %></li>
+        <li>|</li>
+        <li><%= link_to"LOCATION", location_path %></li>
+
+      </ul>
+    </nav>
+	</div>
+	
+	<!--
+	nav{
+		padding-right: 5%;
+	}
+	
+	#nav-bar{
+		box-shadow: 0 0 2px #000;
+	    margin-left: -20px;
+	    width: 100%;
+	    height: 50px;
+		background-color: #cc0000;
+	}
+
+	nav li {
+		display: inline;
+		float: left;
+		margin-right: 5%;
+	    margin-top:1.8%;
+		font-family: "Champagne & Limousines";
+		text-decoration: none;
+	}
+
+	nav li a {
+		color: #fff;
+		text-decoration: none;
+		list-style-type: none;
+	}
+
+	nav li a visited {
+		color: #725d4c;
+	}
+
+	nav li a:hover {
+		color: #000;
+	}
+	-->
+	
+	<picture alt="description of image">
+   
+	    <!-- low-res, default -->
+	    <source src="logosmall.png">
+
+	    <!-- med-res -->
+	    <source src="logomedium.png" media="(min-width: 400px)">
+
+	    <!-- high-res -->
+	    <source src="logolarge.png" media="(min-width: 800px)">
+
+	    <!-- Fallback content -->
+	    <%= image_tag "Trendy-Sunglasses-Logo.gif", width:"450%", height:"80%", alt:"logo" %>
+
+	  </picture>
+	  
+	  
+	  
+<nav class="clearfix">
+  <ul class="clearfix">
+    <li><%= link_to "ABOUT US", root_path %></li>
+    <li><%= link_to "CONTACT", brands_path %></li>
+    <li><%= link_to "TERMS OR SERVICE" ,about_path %></li>
+    <li><%= link_to"RETURNS & EXCHANGES", location_path %></li>
+    <li><%= link_to"STORE LOCATOR", location_path %></li>
+  </ul>
+
+  <a href="#" id="pull">SERVICE</a>
+</nav>
+
+<div id="footer">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</div>
+
+
+<div id="footer">
+  <div id="footer-text">
+    <ul>
+      <li><%= link_to "STORE LOCATOR", location_path %></li>
+      <li><%= link_to "CONTACT", contact_path %></li>
+      <li><%= link_to "TERMS OF SERVICE", terms_path %></li>
+      <li><%= link_to "RETURNS & EXCHANGES", about_path %></li>
+      <li><%= link_to "ABOUT US", location_path %></li>
+    </ul>
+  </div>
+</div>
+
+	  #footer{
+	      height: 200px;
+	      background-color: #cc0000;
+	      box-shadow: 0 0 2px #000;
+	      clear: both;
+	  }
+
+	  #footer-text{
+	      height: 100%;
+	      margin-right: 80px;
+	  }
+
+	  #footer li {
+	      display: inline;
+	      float: right;
+	      padding-right: 45px;
+	      padding-top: 17px;
+	      font-family: "Champagne & Limousines";
+	      font-size: 12px;
+	      text-decoration: none;
+	  }
+
+	  #footer li a {
+	      color: #fff;
+	      text-decoration: none;
+	      list-style-type: none;
+	  }
+
+	  #footer li a visited {
+	      color: #725d4c;
+	  }
+
+	  #footer li a:hover {
+	      color: #000;
+	  }
+	  
+	  
+	  ////////////////////Right Three Boxes//////////////
+	  
+#box-right-top{
+    height: 50px;
+    width: 175px;
+    margin-top: 2.2%;
+    margin-right: 2.2%;
+    background-color: #FFF;
+    box-shadow: 0 0 2px #000;
+    position: relative;
+    float: left;
+}
+
+#box-right-center{
+    height: 50px;
+    width: 175px;
+    margin-right: 2.2%;
+    margin-top: 2.4%;
+    background-color: #FFF;
+    box-shadow: 0 0 2px #000;
+    position: relative;
+    float: left;
+}
+
+#box-right-bottom{
+    height: 50px;
+    width: 175px;
+    margin-right: 2.2%;
+    margin-top: 2.4%;
+    margin-bottom: 3%;
+    background-color: #FFF;
+    box-shadow: 0 0 2px #000;
+    float: left;
+}
+
+	  
+	  <div id="yelp-box">
+	    <div id='yelpwidget'></div>
+	    <div id="yelp-logo"></div>
+	  </div>
+	  
+	  <div id="footer">
+	    <div id="footer-text">
+	      <ul>
+	        <li><%= link_to "STORE LOCATOR", location_path %></li>
+	        <li><%= link_to "CONTACT", contact_path %></li>
+	        <li><%= link_to "TERMS OF SERVICE", terms_path %></li>
+	        <li><%= link_to "RETURNS & EXCHANGES", about_path %></li>
+	        <li><%= link_to "ABOUT US", location_path %></li>
+	      </ul>
+	    </div>
+	  </div>
+	  
+	  #footer{
+	      height: 200px;
+	      margin-top: 150px;
+	      background-color: #cc0000;
+	      box-shadow: 0 0 2px #000;
+	      clear: both;
+	  }
+
+	  #footer-text{
+	      height: 100%;
+	      margin-right: 80px;
+	  }
+	  
+	  #footer li {
+	      display: inline;
+	      float: right;
+	      padding-right: 45px;
+	      padding-top: 17px;
+	      font-family: "Champagne & Limousines";
+	      font-size: 12px;
+	      text-decoration: none;
+	  }
+
+	  #footer li a {
+	      color: #fff;
+	      text-decoration: none;
+	      list-style-type: none;
+	  }
+
+	  #footer li a visited {
+	      color: #725d4c;
+	  }
+
+	  #footer li a:hover {
+	      color: #000;
+	  }

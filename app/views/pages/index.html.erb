@@ -1,0 +1,120 @@
+
+<div class="top-ad">
+     <%= image_tag "3banner.jpg" %>
+     <%= image_tag "3banner.jpg" %>
+</div>
+
+
+<div id="content1">
+  <div id="gallery">
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <div id="slider">
+                <%= image_tag "1.jpg"%>
+                <%= image_tag "2.jpg"%>
+                <%= image_tag "3.jpg"%>
+                <%= image_tag "4.jpg"%>
+                <%= image_tag "5.jpg"%>
+         </div>
+        <div id="slider-direction-nav"></div>
+        <div id="slider-control-nav"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="mail-back">
+  <div id="envelope-closed"></div>
+  <div id="paper"><h4><u>Click to Join!</u></h4></div>
+  <div id="envelope-open"></div>
+  <div id="outer-envelope"> </div>
+</div>
+
+<div id="box-center">
+  <div id="yelp-box">
+    <div id='yelpwidget'></div>
+    <div id="yelp-logo"></div>
+  </div>
+</div>
+
+<div id="box-right-top">
+</div>
+
+<div id="box-right-center">
+</div>
+
+<div id="box-right-bottom">
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var slider = $('#slider').leanSlider({
+            directionNav: '#slider-direction-nav',
+            controlNav: '#slider-control-nav'
+        });
+    });
+</script>
+
+
+<script>
+    $( document ).ready(function() {
+        $('.top-ad').slidesjs({
+            width: 400,
+            height: 100,
+            play: {
+                effect: "fade",
+
+                auto: true,
+                interval: 4000,
+                swap: true
+            }
+        }) ;
+    });
+</script>
+
+<script>
+$(function() {
+var pull 		= $('#pull');
+menu 		= $('nav ul');
+menuHeight	= menu.height();
+
+$(pull).on('click', function(e) {
+e.preventDefault();
+menu.slideToggle();
+});
+});
+</script>
+
+<script>
+$(window).resize(function(){
+var w = $(window).width();
+if(w > 320 && menu.is(':hidden')) {
+menu.removeAttr('style');
+}
+});
+</script>
+
+<script>
+    $(function() {
+        var pullfoot 		= $('#pullfoot');
+        services 		= $('foot ul');
+        servicesHeight	= services.height();
+
+        $(pullfoot).on('click', function(e) {
+            e.preventDefault();
+            services.slideToggle();
+        });
+    });
+</script>
+
+<script>
+    $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 320 && services.is(':hidden')) {
+            services.removeAttr('style');
+        }
+    });
+</script>
+

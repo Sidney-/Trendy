@@ -1,0 +1,5 @@
+<%= form_for @newsletter, url: {action: "newsletterSave"}, html: {class: "nifty_form"} do |f| %>
+    Name :<%= f.text_field :name %>
+   Mail : <%= f.text_field :mail, size: "60x12" %>
+    <%= f.submit "Create" %>
+<% end %>
