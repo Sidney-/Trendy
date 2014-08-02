@@ -6,8 +6,8 @@ Glass::Application.routes.draw do
   #  devise_for :users, :controllers => { :registrations => "registrations" }
   #else
 
-  match 'users/sign_up' => redirect('/404.html'), via: :get
-  match 'users' =>      redirect('/404.html'), via: :post
+#  match 'users/sign_up' => redirect('/404.html'), via: :get
+ #match 'users' =>      redirect('/404.html'), via: :post
 
   devise_for :users
   #end
