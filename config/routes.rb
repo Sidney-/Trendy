@@ -1,6 +1,18 @@
 Glass::Application.routes.draw do
-  root 'pages#index'
 
+
+
+ # if Rails.env.production?
+  #  devise_for :users, :controllers => { :registrations => "registrations" }
+  #else
+
+  match 'users/sign_up' => redirect('/404.html'), via: :get
+  match 'users' =>      redirect('/404.html'), via: :post
+
+  devise_for :users
+  #end
+  root 'pages#index'
+  resource :users
   match  "/location", to:"pages#location",via: :get
   match  "/terms", to:"pages#terms",via: :get
   match  "/returns", to:"pages#returns",via: :get
@@ -10,6 +22,12 @@ Glass::Application.routes.draw do
   match  "/brands", to:"pages#brands", via: :get
   match  "/newsletter", to:"pages#newsletter", via: [:get,:post]
   match "/newsletterSave", to:"pages#newsletterSave", via:[:post]
+  match "/admin/NewsReport" ,to:"admin#newsletterReport", via: :get , as: 'NewsReport'
+  match "/admin", to:"admin#index", via: :get
+  match "/admin/Eaboutme", to:"admin#Eaboutme", via: :get
+  match "/admin/EaboutmeSave", to:"admin#EaboutmeSave", via: :post
+  match "/admin/Cbimage", to:"admin#Cbimage", via: :get
+
   #resources :newsletter
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

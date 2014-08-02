@@ -1,0 +1,8 @@
+
+<h1> Newsletter</h1>
+<% @reports.each do |report| %>
+
+    <li>  <%= report[:name]%> :<%= report[:mail] %></li>
+
+
+<% end %>

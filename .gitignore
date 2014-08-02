@@ -12,7 +12,5 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-#rails specific
-config/database.yml
-log/*
-tmp/*
+/log/*.log
+/tmp

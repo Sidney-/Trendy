@@ -2,17 +2,17 @@
  * Lean Slider Sample Styles
  * http://dev7studios.com/lean-slider
  */
- 
+
 .slider-wrapper {
-	position: relative;
-	/*background: #fff url("loading.gif") no-repeat 50% 50%;*/
-	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.4);
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.4);
-	box-shadow: 0 0 3px rgba(0,0,0,0.4);
-	width: 100%;
-	margin-left: 0px;
-	margin-top: -25px;
-	margin-bottom: 50px;
+    position: relative;
+    /*background: #fff url("loading.gif") no-repeat 50% 50%;*/
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    width: 100%;
+    margin-left: 0px;
+    margin-top: -25px;
+    margin-bottom: 50px;
 }
 .lean-slider { overflow: hidden; }
 .lean-slider-slide {
@@ -26,22 +26,22 @@
     transition: opacity 0.6s linear;
 }
 .lean-slider-slide.current { opacity: 1; }
-.lean-slider-slide img { 
+.lean-slider-slide img {
     display: block;
     width: 100%;
 }
 
 #slider-direction-nav {
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 100%;
-	-webkit-transition: opacity 0.2s linear;
-	-moz-transition: opacity 0.2s linear;
-	-ms-transition: opacity 0.2s linear;
-	-o-transition: opacity 0.2s linear;
-	transition: opacity 0.2s linear;
-	opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    opacity: 0.2;
 }
 .slider-wrapper:hover #slider-direction-nav { opacity: 1; }
 #slider-direction-nav a {
@@ -102,21 +102,21 @@
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-width : 480px) {
 
     #slider-direction-nav,
-	#slider-control-nav { opacity: 1; }
+    #slider-control-nav { opacity: 1; }
 
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
-	
-	#slider-direction-nav,
-	#slider-control-nav { opacity: 1; }
+
+    #slider-direction-nav,
+    #slider-control-nav { opacity: 1; }
 
 }

@@ -1,5 +1,41 @@
+
 <%= form_for @newsletter, url: {action: "newsletterSave"}, html: {class: "nifty_form"} do |f| %>
-    Name :<%= f.text_field :name %>
-   Mail : <%= f.text_field :mail, size: "60x12" %>
-    <%= f.submit "Create" %>
+<%= f.text_field :name, class:"inputs", placeholder:"name", id:"name-textfield",:'data-validation-length' =>"min4", :'data-validation'=>"length" %>
+<%= f.text_field :mail, class:"inputs", placeholder:"e-mail address",id:"email-textfield", :'data-validation'=>"email" %>
+<%= image_tag'X.png', width:"3%", height: 'width-10',id:'x-button' %>
+<input type="image" src="<%=asset_path('assets/JoinButton.png') %>" name="saveForm" class="joinbutton" id="join-button" />
+
 <% end %>
+
+          <script>
+$("#x-button").bind("click", function(){
+
+console.log("hhhhh")
+$('.popi').hide();
+
+})  ;
+   var CustomError ={badEmail :"Wrong Email",lengthTooShortStart:"SHORT"}
+$.validate({language : CustomError});
+
+
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

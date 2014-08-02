@@ -1,0 +1,10 @@
+               <h1> EDIT ABOUT ME PAGE </h1>
+
+
+
+               <%= form_tag('/admin/EaboutmeSave') do -%>
+                   <%=text_area(:post, :body, cols: 40, rows: 20,value:@bodyy) %>
+                   </br>
+                   <div><%= submit_tag 'Save' %></div>
+               <% end -%>
+
