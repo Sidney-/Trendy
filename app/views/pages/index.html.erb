@@ -1,8 +1,8 @@
 
 <div id="top-banner">
-
-  <div class="popi"></div>
-
+  <div id="top-banner-text">
+    Hello, Call us Bitches!
+  </div>
 </div>
 
 <div id="content1">
@@ -23,59 +23,42 @@
   </div>
 </div>
 
-
 <div id="mail-list">
-
 </div>
 
 <div id="box-center">
-
-
-
     <div id='yelpwidget'></div>
     <div id="yelp-logo"></div>
-
-
-
 </div>
 
-<div id="box-right-top">
-</div> <div id="box-right-center">
-</div> <div id="box-right-bottom">
-</div>
+<div id="box-right-top"></div>
+<div id="box-right-center"></div>
+<div id="box-right-bottom"></div>
 
 
       <script>
         $(document).ready(function() {
 
+             /* poopin up */
+            $("#mail-list").on("click",function() {
+            $.get('/newsletter', function(data){
+            $('.popi').html(data);
+            $('.popi').fadeIn();
+            $('.popi').css( "width", "50%" );
+            $('.popi').css("height", "50%");
+            });
 
+                $(function() {
+                var pull = $('#pull');
+                menu = $('nav ul');
+                menuHeight = menu.height();
 
-        /* poopin up */
-        $("#mail-list").on("click",function() {
-
-        $.get('/newsletter', function(data) {
-
-        $('.popi').html(data);
-        $('.popi').fadeIn();
-        $( '.popi' ).css( "width", "50%" );
-        $('.popi').css("height", "50%")      ;
-        });
-
-
-
-        });
-        /* Yelp */
-        (function() {
-        var s = document.createElement("script");
-        s.async = true;
-        s.onload = s.onreadystatechange = function()
-        {getYelpWidget("trendy-sunglasses-santa-monica","223","RED","y","y","0");};
-        s.src='http://chrisawren.com/widgets/yelp/yelpv2.js' ;
-        var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})
-
-        ();
-
-
+                    $(pull).on('click', function(e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                    });
+                });
+            });
 
         /*Slider*/
 
