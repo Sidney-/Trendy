@@ -36,7 +36,7 @@ end
 
     @AllBrands = Dir.entries("app/assets/images/Brands/")
     @AllBrands.shift(2)
-    
+
 
   end
 
