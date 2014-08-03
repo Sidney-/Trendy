@@ -1,6 +1,12 @@
 require 'Aeditor'
 class PagesController < ApplicationController
 
+def index
+  @AllSliders = Dir.entries("app/assets/images/Sliders/")
+  @AllSliders.shift(2)
+logger.debug "Armin"+ @AllSliders.to_s
+
+end
   def location
   end
 

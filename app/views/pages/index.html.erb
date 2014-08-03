@@ -10,11 +10,11 @@
     <div class="slider-container">
       <div class="slider-wrapper">
         <div id="slider">
-          <%= image_tag "1.jpg"%>
-          <%= image_tag "2.jpg"%>
-          <%= image_tag "3.jpg"%>
-          <%= image_tag "4.jpg"%>
-          <%= image_tag "5.jpg"%>
+          <%  @AllSliders.each do |item| %>
+
+              <%= image_tag "Sliders/#{item}"%>
+
+          <% end %>
         </div>
         <div id="slider-direction-nav"></div>
         <div id="slider-control-nav"></div>
