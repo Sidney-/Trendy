@@ -12,7 +12,7 @@ class PagesController < ApplicationController
 
   def about
 #@x = Aeditor::Meditor.hello
- @body= Mcms.last.body
+ @body= Mcms.first.body
   end
 
 def newsletter
@@ -32,5 +32,13 @@ end
 
     end
 
+  def brands
+
+    @AllBrands = Dir.entries("app/assets/images/Brands/")
+    @AllBrands.shift(2)
+    
+
+  end
 
 end
+

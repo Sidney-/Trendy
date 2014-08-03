@@ -13,6 +13,7 @@ Glass::Application.routes.draw do
   #end
   root 'pages#index'
   resource :users
+
   match  "/location", to:"pages#location",via: :get
   match  "/terms", to:"pages#terms",via: :get
   match  "/returns", to:"pages#returns",via: :get
@@ -24,9 +25,10 @@ Glass::Application.routes.draw do
   match "/newsletterSave", to:"pages#newsletterSave", via:[:post]
   match "/admin/NewsReport" ,to:"admin#newsletterReport", via: :get , as: 'NewsReport'
   match "/admin", to:"admin#index", via: :get
-  match "/admin/Eaboutme", to:"admin#Eaboutme", via: :get
+  match "/admin/Eaboutme", to:"admin#Eaboutme", via: [:get,:post], as:'mcms'
   match "/admin/EaboutmeSave", to:"admin#EaboutmeSave", via: :post
-  match "/admin/Cbimage", to:"admin#Cbimage", via: :get
+  match "/admin/Cbimage", to:"admin#Cbimage", via: [:get,:post]
+  match "/admin/CbimageSave", to:"admin#CbimageSave", via: [:get,:post,:patch]
 
   #resources :newsletter
   # The priority is based upon order of creation: first created -> highest priority.

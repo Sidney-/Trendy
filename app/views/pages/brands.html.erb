@@ -1,2 +1,16 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/brands.html.erb</p>
+
+<div id="sun-text">
+  Sun Brands
+</div>
+
+<%  @AllBrands.each_with_index do |item, index| %>
+
+
+
+    <div id="brand<%=index%3+1 %>">
+
+      <%= image_tag "Brands/#{item}"%>
+        </div>
+
+
+<% end  %>

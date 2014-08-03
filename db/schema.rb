@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140417004548) do
+ActiveRecord::Schema.define(version: 20140802045330) do
 
   create_table "mcms", force: true do |t|
     t.text     "body"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20140417004548) do
     t.text     "topbannerimage2"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "pic1"
   end
 
   create_table "newsletters", force: true do |t|
