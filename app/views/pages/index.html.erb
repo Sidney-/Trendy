@@ -1,3 +1,10 @@
+<%= javascript_include_tag "jquery.form-validator.min" %>
+<%= javascript_include_tag "yelp" %>
+<%= javascript_include_tag "lean-slider" %>
+<%= javascript_include_tag "popUp" %>
+
+
+
 
 <div id="top-banner">
   <div id="top-banner-text-large">
@@ -38,38 +45,7 @@
 <a href="https://www.instagram.com/" target="_blank"><div id="box-right-center"></div></a>
 <a href="https://twitter.com/trendy_sunglass" target="_blank"><div id="box-right-bottom"></div></a>
 
-
-      <script>
-        $(document).ready(function() {
-
-             /* poopin up */
-            $("#mail-list").on("click",function() {
-            $.get('/newsletter', function(data){
-            $('.popi').html(data);
-            $('.popi').fadeIn();
-            $('.popi').css( "width", "50%" );
-            $('.popi').css("height", "50%");
-            });
-
-
-            });
-
-        /*Slider*/
-
-        var slider = $('#slider').leanSlider({
-        directionNav: '#slider-direction-nav',
-        controlNav: '#slider-control-nav'
-        });
-
-
-
-
-
-        });
-      </script>
-
-
-
+\
 
 
 
