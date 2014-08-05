@@ -43,7 +43,7 @@ class AdminController < ApplicationController
   def Cbimage
 
 
-    @mcms = Mcms.find_by_id(5)
+    @mcms= Mcms.first
   end
 
   def CbimageSave
@@ -90,7 +90,7 @@ class AdminController < ApplicationController
 
     end
     if(params[:brands])
-   #   FileUtils.rm_rf(Dir.glob("#{@mcms[:pic3].to_s}*" ))
+    FileUtils.rm_rf(Dir.glob("#{@mcms[:pic3].to_s}*" ))
       brands = params[:brands][:pic3]
       i=0
       while i < brands.size  do
