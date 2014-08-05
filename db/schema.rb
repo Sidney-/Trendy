@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140803205017) do
+ActiveRecord::Schema.define(version: 20140802045330) do
 
   create_table "mcms", force: true do |t|
     t.text     "body"
@@ -20,8 +20,6 @@ ActiveRecord::Schema.define(version: 20140803205017) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "pic1"
-    t.string   "pic2"
-    t.string   "pic3"
   end
 
   create_table "newsletters", force: true do |t|

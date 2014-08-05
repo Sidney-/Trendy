@@ -46,21 +46,30 @@ header{
 }
 
 #top-banner{
-    margin-top: 30px;
+    margin-top: 28px;
     width: 100%;
     height: 50px;
-    background-color: #cc0000;
+    background-color: #fff;
+    box-shadow: 0 0 2px #000;
+    background-image:url("topbannerbackground.jpg");
 }
 
-#top-banner-text {
+#top-banner-text-large {
     width: 100%;
-    max-width: 250px;
-    height: 100%;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 8px;
+    font-family: "Champagne & Limousines";
     padding-top: 15px;
-    font-size: 20px;
-    color: #fff;
+    font-size: 19px;
+    color: #333;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+#top-banner-text-small {
+    visibility: hidden;
 }
 
 #content1{
@@ -90,6 +99,7 @@ header{
     margin-bottom: 40px;
     background-color: #FFF;
     box-shadow: 0 0 2px #000;
+    background-image:url("mail.jpg");
     float: left;
 }
 
@@ -313,6 +323,39 @@ nav a#pull {
     overflow: hidden;
 }
 
+#terms-wrapper{
+    width: 100%;
+    max-width: 990px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    box-shadow: 0 0 2px #000;
+}
+
+#terms{
+    width: 100%;
+    font-family: "Champagne & Limousines";
+    font-size: 35px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #cc0000;
+}
+
+#terms-paragraph{
+    width: 94%;
+    max-width: 640px;
+    font-family: "Champagne & Limousines";
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+    padding-right:10px;
+    margin-bottom: -40px;
+    padding-left: 10px;
+    color: #333;
+    overflow: hidden;
+}
+
 #map-wrapper{
     width: 100%;
     max-width: 990px;
@@ -344,25 +387,21 @@ nav a#pull {
     #box-center {
         margin-left: 5%;
     }
-
     #box-right-top{
         width: 200px;
         margin-left: 15%;
         margin-top: 30px;
     }
-
     #box-right-center{
         width: 200px;
         margin-left: 20px;
         margin-top: 30px;
     }
-
     #box-right-bottom{
         width: 200px;
         margin-left: 20px;
         margin-top: 30px;
     }
-
     #mail-list {
         margin-left: 8%;
     }
@@ -372,15 +411,12 @@ nav a#pull {
     #mail-list {
         margin-left: 4%;
     }
-
     #box-right-top{
         margin-left: 12%;
     }
-
     #footer{
         height: 70px;
     }
-
     #footer li {
         padding-right: 30px;
     }
@@ -396,30 +432,25 @@ nav a#pull {
 }
 
 @media screen and (max-width: 840px){
-
     #box-center {
         margin-bottom: -300px;
         margin-top: -475px;
         margin-left: 15%;
     }
-
     #mail-list {
         margin-top: 230px;
         margin-left: 5%;
     }
-
     #box-right-top{
         width: 250px;
         margin-left: 55%;
         margin-top: -240px;
     }
-
     #box-right-center{
         width: 250px;
         margin-left: 55%;
         margin-top: -165px;
     }
-
     #box-right-bottom{
         width: 250px;
         margin-left: 55%;
@@ -428,8 +459,6 @@ nav a#pull {
     #about-paragraph {
         font-size: 20px;
     }
-
-
 }
 
 @media screen and (max-width: 600px) {
@@ -454,45 +483,36 @@ nav a#pull {
         width: 100%;
         text-indent: 25px;
     }
-
     #box-center{
         margin-left: 9%;
     }
-
     #mail-list {
         margin-left: 2%;
     }
-
     #logo{
         background: url("logomedium.png") no-repeat;
     }
-
     #box-right-top{
         width: 225px;
 
         margin-left: 55%;
     }
-
     #box-right-center{
         width: 225px;
         margin-left: 55%;
     }
-
     #box-right-bottom{
         width: 225px;
         margin-left: 55%;
     }
-
     #footer{
         height: 150px;
         margin-bottom: -40px;
     }
-
     #footer li{
         margin-left: -30px;
         display: block;
     }
-
     #extra-contact{
         visibility: visible;
         margin-left: 55%;
@@ -500,6 +520,23 @@ nav a#pull {
         font-family: "Champagne & Limousines";
         font-size: 16px;
         color: #fff;
+    }
+    #top-banner-text-large{
+        visibility: hidden;
+    }
+    #top-banner-text-small{
+        width: 100%;
+        max-width: 400px;
+        margin-top: -25px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 45px;
+        font-family: "Champagne & Limousines";
+        font-size: 18px;
+        color: #333;
+        letter-spacing: 4px;
+        position: relative;
+        visibility: visible;
     }
 }
 
@@ -509,12 +546,10 @@ nav a#pull {
         background-size: 100% 200px;
         margin-left: 0%;
     }
-
     #mail-list {
         width: 100%;
         margin-left: 0px;
     }
-
     #box-right-top{
         width: 100%;
         margin-top: 0px;
@@ -526,11 +561,18 @@ nav a#pull {
         margin-top: 25px;
         margin-left: 0%;
     }
-
     #box-right-bottom{
         width: 100%;
         margin-top: 20px;
         margin-left: 0%;
+    }
+    #top-banner-text-small{
+        width: 100%;
+        margin-top: -45px;
+    }
+    #top-banner-text-small {
+        padding-left: 11%;
+        font-size: 18px;
     }
 }
 
@@ -572,22 +614,30 @@ nav a#pull {
     #yelp-logo{
         display: none;
     }
+    #top-banner-text-small {
+        padding-left: 14%;
+        font-size: 16px;
+    }
 }
-
-
 
 @media only screen and (max-width : 400px) {
     #yelpwidget{
         margin-right: 9%;
     }
+    #top-banner-text-small {
+        padding-left: 10%;
+    }
 }
 
 @media only screen and (max-width : 370px) {
     #yelpwidget{
-        margin-right: 10%;
+        margin-right: 8%;
     }
     #map-canvas {
         height: 300px;
+    }
+    #top-banner-text-small {
+        padding-left: 2%;
     }
 }
 
@@ -604,6 +654,9 @@ nav a#pull {
     #yelpwidget{
         margin-top: 20px;
         margin-right: 5px;
+    }
+    #top-banner-text-small {
+        padding-left: 2%;
     }
 }
 

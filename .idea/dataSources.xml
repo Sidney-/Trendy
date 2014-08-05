@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Rails Glass: development" uuid="bc8785bd-9934-4fa9-b267-f744ff6eab94">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Armin\RubymineProjects\glass2\Trendy\Trendy\db\development.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/xerial-sqlite-license.txt</url>
