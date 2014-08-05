@@ -35,27 +35,15 @@ class AdminController < ApplicationController
   def newsletterReport
 
     @reports = Newsletter.all
+    render :layout => false
 
 
-    respond_to do |format|
-      format.html
-      format.xls { send_data(@reports.to_xls)  }
-      format.csv do
-             headers['Content-Disposition'] = "attachment; filename=\"user-list\""
-              headers['Content-Type'] ||= 'text/csv'
-            end
-  #  respond_to do |format|
-  #    format.html
-  #
-  #
-  #end
   end
-end
 
   def Cbimage
 
 
-    @mcms = Mcms.first
+    @mcms = Mcms.find_by_id(5)
   end
 
   def CbimageSave
@@ -80,16 +68,16 @@ end
 
 
 
+    FileUtils.rm_rf(Dir.glob("#{@mcms[:pic1].to_s}*" ))
 
     #It uploads the banner pictures
-    if(params[:mcms])
-     FileUtils.rm_rf(Dir.glob("#{@mcms[:pic1].to_s}*" ))
-        @topBanner = params[:mcms][:pic1]
+   if(params[:mcms])
+       @topBanner = params[:mcms][:pic1]
        uploader = AddpicassetUploader.new(name:"topBanner" ,path:"#{@mcms[:pic1].to_s}")
        uploader.store!(@topBanner)
     end
+
     if(params[:post_attachments])
-      FileUtils.rm_rf(Dir.glob("#{@mcms[:pic2].to_s}*" ))
       sliders = params[:post_attachments][:pic2]
       i=0
       while i < sliders.size  do
@@ -100,19 +88,6 @@ end
 
 
     end
-    if(params[:brands])
-   #   FileUtils.rm_rf(Dir.glob("#{@mcms[:pic3].to_s}*" ))
-      brands = params[:brands][:pic3]
-      i=0
-      while i < brands.size  do
-        uploader = AddpicassetUploader.new(name:"brand#{i}"+Time.now.to_s.gsub(/[\W]/,''),path:"#{@mcms[:pic3].to_s}")
-        uploader.store!(brands.at(i))
-        i=i+1
-      end
-
-
-    end
-
 
 
     redirect_to admin_path
