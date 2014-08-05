@@ -2,9 +2,7 @@
 <%= javascript_include_tag "yelp" %>
 <%= javascript_include_tag "lean-slider" %>
 <%= javascript_include_tag "popUp" %>
-
-
-
+<div class="popi"></div>
 
 <div id="top-banner">
   <div id="top-banner-text-large">
@@ -20,11 +18,11 @@
     <div class="slider-container">
       <div class="slider-wrapper">
         <div id="slider">
+
           <%  @AllSliders.each do |item| %>
-
               <%= image_tag "Sliders/#{item}"%>
-
           <% end %>
+
         </div>
         <div id="slider-direction-nav"></div>
         <div id="slider-control-nav"></div>
@@ -34,6 +32,9 @@
 </div>
 
 <div id="mail-list">
+    <div id="mail-list-stripe">
+      <div id="mail-text"></div>
+    </div>
 </div>
 
 <div id="box-center">
@@ -45,7 +46,6 @@
 <a href="https://www.instagram.com/" target="_blank"><div id="box-right-center"></div></a>
 <a href="https://twitter.com/trendy_sunglass" target="_blank"><div id="box-right-bottom"></div></a>
 
-\
 
 
 

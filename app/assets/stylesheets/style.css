@@ -1,5 +1,3 @@
-
-
 *{
     margin: 0px;
     margin-top: 0px;
@@ -69,6 +67,17 @@ header{
 }
 
 #top-banner-text-small {
+    width: 100%;
+    max-width: 400px;
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 45px;
+    font-family: "Champagne & Limousines";
+    font-size: 18px;
+    color: #333;
+    letter-spacing: 4px;
+    position: relative;
     visibility: hidden;
 }
 
@@ -101,6 +110,20 @@ header{
     box-shadow: 0 0 2px #000;
     background-image:url("mail.jpg");
     float: left;
+}
+
+#mail-list-stripe{
+    width: 100%;
+}
+
+#mail-text{
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 250px;
+    background-image:url("maillisttext.png");
+    background-repeat: no-repeat;
 }
 
 #box-center{/*red box yelp*/
@@ -378,10 +401,6 @@ nav a#pull {
     background-size: cover;
 }
 
-#about-paragraph p{
-    color:#6FCDDE;
-}
-
 #brands-wrapper{
     width: 100%;
     max-width: 990px;
@@ -609,17 +628,6 @@ nav a#pull {
         visibility: hidden;
     }
     #top-banner-text-small{
-        width: 100%;
-        max-width: 400px;
-        margin-top: -25px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 45px;
-        font-family: "Champagne & Limousines";
-        font-size: 18px;
-        color: #333;
-        letter-spacing: 4px;
-        position: relative;
         visibility: visible;
     }
 }
@@ -791,7 +799,12 @@ nav a#pull {
 }
 
 .popi {
+    top: 100px;
+    left: 200px;
     background-color: #006600;
     z-index: 99;
+
+    background-repeat: no-repeat;
     background-image: url("EmailCard_03.png");
+
 }
