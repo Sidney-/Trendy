@@ -3,14 +3,12 @@
   Sun Brands
 </div>
 
-<%  @AllBrands.each_with_index do |item, index| %>
-
-
-
-    <div id="brand<%=index%3+1 %>">
-
-      <%= image_tag "Brands/#{item}"%>
-        </div>
-
-
-<% end  %>
+<div id="brands-wrapper">
+    <div id="brands-container">
+        <%  @AllBrands.each_with_index do |item, index| %>
+            <div id="brand<%=index%3+1 %>">
+                <%= image_tag "Brands/#{item}"%>
+            </div>
+        <% end  %>
+    </div>
+</div>
