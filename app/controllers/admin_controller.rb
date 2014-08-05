@@ -34,20 +34,28 @@ class AdminController < ApplicationController
 
   def newsletterReport
 
-respond_to do |format|
-  format.html
-  format.csv { render text: @newsleters.to_csv}
-  end
     @reports = Newsletter.all
-    render :layout => false
 
 
+    respond_to do |format|
+      format.html
+      format.xls { send_data(@reports.to_xls)  }
+      format.csv do
+             headers['Content-Disposition'] = "attachment; filename=\"user-list\""
+              headers['Content-Type'] ||= 'text/csv'
+            end
+  #  respond_to do |format|
+  #    format.html
+  #
+  #
+  #end
   end
+end
 
   def Cbimage
 
 
-    @mcms = Mcms.find_by_id(5)
+    @mcms = Mcms.first
   end
 
   def CbimageSave
@@ -74,13 +82,12 @@ respond_to do |format|
 
 
     #It uploads the banner pictures
-   if(params[:mcms])
+    if(params[:mcms])
      FileUtils.rm_rf(Dir.glob("#{@mcms[:pic1].to_s}*" ))
         @topBanner = params[:mcms][:pic1]
        uploader = AddpicassetUploader.new(name:"topBanner" ,path:"#{@mcms[:pic1].to_s}")
        uploader.store!(@topBanner)
     end
-
     if(params[:post_attachments])
       FileUtils.rm_rf(Dir.glob("#{@mcms[:pic2].to_s}*" ))
       sliders = params[:post_attachments][:pic2]

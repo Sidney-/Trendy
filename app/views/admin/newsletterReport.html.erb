@@ -1,8 +1,11 @@
 
-<h1> Newsletter</h1>
-<% @reports.each do |report| %>
 
-    <li>  <%= report[:name]%> :<%= report[:mail] %></li>
+<%= link_to 'Excel Download', admin_path(:format => :xls) %>
+<%- headers = ['Name', 'Email'] -%>
+<%= CSV.generate_line headers %>
+<%- @reports.each do |report| -%>
+    <%- row = [ report.name, report.mail ] -%>
+    <%= CSV.generate_line row %>
+<%- end -%>
 
-
-<% end %>
+<%= link_to 'Download CSV list', admin_path(format: :csv) %>
