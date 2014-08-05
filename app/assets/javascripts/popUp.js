@@ -9,9 +9,8 @@ $(document).ready(function() {
         $.get('/newsletter', function(data){
             $('.popi').html(data);
             $('.popi').fadeIn();
-            $('.popi').css( "width", "50%" );
-            $('.popi').css("height", "50%");
-            $('.popi').css("position", "absolute");
+
+
         });
 
 
