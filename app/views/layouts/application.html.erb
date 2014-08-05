@@ -11,16 +11,12 @@
 
 
 <div id="wrapper">
-<%= render "layouts/header"%>
 
+    <%= render "layouts/header"%>
+    <%= yield %>
+  <div id="popi"></div>
+    <%= render "layouts/footer"%>
 
-
-<%= yield %>
-
-
-
-
-  <%= render "layouts/footer"%>
 
 </div>
 
