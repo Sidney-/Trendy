@@ -2,7 +2,6 @@
 <%= javascript_include_tag "yelp" %>
 <%= javascript_include_tag "lean-slider" %>
 <%= javascript_include_tag "popUp" %>
-<div class="popi"></div>
 
 <div id="top-banner">
   <div id="top-banner-text-large">
@@ -12,6 +11,8 @@
     SHOP TRENDY (310) 392-0055
   </div>
 </div>
+
+
 
 <div id="content1">
   <div id="gallery">
@@ -31,10 +32,10 @@
   </div>
 </div>
 
-<div id="mail-list">
-    <div id="mail-list-stripe">
-      <div id="mail-text"></div>
-    </div>
+
+<div id="mail-list" >
+  <div id='screen'></div>
+  <div id="mail-text"></div>
 </div>
 
 <div id="box-center">
@@ -48,4 +49,13 @@
 
 
 
-
+<script>
+$(function(){
+var pop = function(){
+$('#screen').css({ opacity: 0.7, 'width':$(document).width(),'height':$(document).height()});
+$('body').css({'overflow':'hidden'});
+$('#box').css({'display': 'block'});
+}
+$('#mail-list').click(pop);
+});
+</script>
