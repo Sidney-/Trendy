@@ -34,6 +34,10 @@ class AdminController < ApplicationController
 
   def newsletterReport
 
+respond_to do |format|
+  format.html
+  format.csv { render text: @newsleters.to_csv}
+  end
     @reports = Newsletter.all
     render :layout => false
 
