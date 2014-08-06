@@ -46,7 +46,7 @@ class AdminController < ApplicationController
   def Cbimage
 
 
-    @mcms = Mcms.find_by_id(5)
+    @mcms = Mcms.first
   end
 
   def CbimageSave
@@ -75,12 +75,14 @@ class AdminController < ApplicationController
 
     #It uploads the banner pictures
    if(params[:mcms])
-       @topBanner = params[:mcms][:pic1]
+     FileUtils.rm_rf(Dir.glob("#{@mcms[:pic1].to_s}*" ))
+     @topBanner = params[:mcms][:pic1]
        uploader = AddpicassetUploader.new(name:"topBanner" ,path:"#{@mcms[:pic1].to_s}")
        uploader.store!(@topBanner)
     end
 
     if(params[:post_attachments])
+      FileUtils.rm_rf(Dir.glob("#{@mcms[:pic2].to_s}*" ))
       sliders = params[:post_attachments][:pic2]
       i=0
       while i < sliders.size  do
@@ -90,14 +92,27 @@ class AdminController < ApplicationController
       end
 
 
+
+
+
+
+
+    end
+    if(params[:mbrands])
+      FileUtils.rm_rf(Dir.glob("#{@mcms[:pic3].to_s}*" ))
+      sliders = params[:mbrands][:pic3]
+      i=0
+      while i < sliders.size  do
+        uploader = AddpicassetUploader.new(name:"slider#{i}"+Time.now.to_s.gsub(/[\W]/,''),path:"#{@mcms[:pic3].to_s}")
+        uploader.store!(sliders.at(i))
+        i=i+1
+      end
+
     end
 
 
     redirect_to admin_path
-
-
-
   end
 
 
-  end
+end
