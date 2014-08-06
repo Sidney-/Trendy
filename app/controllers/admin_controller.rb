@@ -35,7 +35,10 @@ class AdminController < ApplicationController
   def newsletterReport
 
     @reports = Newsletter.all
-    render :layout => false
+      respond_to do |format|
+      format.html # don't forget if you pass html
+      format.xls { send_data(@reports.to_xls) }
+        end
 
 
   end

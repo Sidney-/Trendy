@@ -12,7 +12,6 @@ Glass::Application.routes.draw do
   devise_for :users
   #end
   root 'pages#index'
-  resource :users
 
   match  "/location", to:"pages#location",via: :get
   match  "/terms", to:"pages#terms",via: :get
