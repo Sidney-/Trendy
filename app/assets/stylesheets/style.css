@@ -277,6 +277,7 @@ nav a#pull {
     background-color: #cc0000;
     box-shadow: 0 0 2px #000;
     position: relative;
+    z-index: 0;
     clear: both;
 }
 
@@ -466,10 +467,10 @@ nav a#pull {
     margin-left: auto;
     margin-right: auto;
     background-color: #444;
-    z-index: 99;
+    z-index: 10;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("EmailCard_03.png");
+    background-image: url("EmailCardBig.png");
 }
 
 .toptext{
@@ -859,25 +860,10 @@ nav a#pull {
     }
 }
 
-#screen{
+#screen {
     position: absolute;
     left: 0;
     top: 0;
     background: #000;
+    z-index: 2;
 }
-#box
-{
-    width: 150px;
-    height: 150px;
-    background: #FFF;
-    border: red dotted 5px;
-    text-align: center;
-    position: relative;
-    margin-left: -75px;
-    margin-top: -75px;
-    left: 50%;
-    top: 50%;
-    z-index: 20;
-    display: none;
-}
-
