@@ -10,14 +10,12 @@ end
   end
 
   def terms
-  end
-
-  def returns
+    @record= Mcms.first
   end
 
   def about
 #@x = Aeditor::Meditor.hello
- @body= Mcms.first.body
+  @record= Mcms.first
   end
 
 def newsletter

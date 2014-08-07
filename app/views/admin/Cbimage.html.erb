@@ -5,7 +5,7 @@
 </form>
     -->
 
-<%= form_for @mcms,  url: admin_CbimageSave_path , :html => {:multipart => true} do |f| %>
+<%= form_for @mcms,  url: admin_Cbimage_path , :html => {:multipart => true} do |f| %>
     <p>
       <%= f.label "Top Banner" %><br />
       <%= f.file_field :pic1 %>

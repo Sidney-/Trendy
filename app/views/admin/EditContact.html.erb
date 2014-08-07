@@ -1,0 +1,16 @@
+<%= form_for @mcms ,url: admin_EditContact_path do |f| %>
+
+    <li>
+<%= f.label "Telephone:" %>
+<%= f.text_field :phone, value:@mcms.iphone %>
+    </li>
+    <li>
+<%= f.label "Address:" %>
+<%= f.text_field :address, value:@mcms.iaddress, size:"50" %>
+    </li>
+    <li>
+      <%= f.label "Email :" %>
+      <%= f.text_field :email, value:@mcms.imail, size:"50" %>
+    </li>
+    <%=f.submit "save" %>
+<% end %>

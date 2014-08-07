@@ -14,10 +14,11 @@ Glass::Application.routes.draw do
   match "/admin", to:"admin#index", via: :get
   match "/admin/Eaboutme", to:"admin#Eaboutme", via: [:get,:post], as:'mcms'
   match "/admin/EaboutmeSave", to:"admin#EaboutmeSave", via: :post
-  match "/admin/Cbimage", to:"admin#Cbimage", via: [:get,:post]
-  match "/admin/CbimageSave", to:"admin#CbimageSave", via: [:get,:post,:patch]
+  match "/admin/Cbimage", to:"admin#Cbimage", via: [:get,:post,:patch]
+  match "/admin/EditContact", to:"admin#EditContact", via: [:get,:post,:patch]
 
- # if Rails.env.production?
+
+  # if Rails.env.production?
   #  devise_for :users, :controllers => { :registrations => "registrations" }
   #else
 

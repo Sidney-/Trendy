@@ -8,15 +8,33 @@ class AdminController < ApplicationController
 
   def Eaboutme
 
-          if(Mcms.first.nil?)
-            Mcms.new.save
-          end
+
          @bodyy= Mcms.first.body
          render layout: false
 
 
+
   end
 
+  def EditContact
+    @mcms = Mcms.first
+    if(Mcms.first.present?)
+    if(request.patch?)
+
+      @mcms.imail= params[:mcms][:email] if params[:mcms][:email].present?
+      @mcms.iaddress = params[:mcms][:address] if params[:mcms][:address].present?
+      @mcms.iphone = params[:mcms][:phone] if params[:mcms][:phone].present?
+
+
+
+      @mcms.save!
+      redirect_to admin_path
+
+    end
+
+    end
+
+  end
 
   def EaboutmeSave
 
@@ -43,13 +61,8 @@ class AdminController < ApplicationController
 
   end
 
+
   def Cbimage
-
-
-    @mcms = Mcms.first
-  end
-
-  def CbimageSave
 
    # Rails.logger.debug  "debugging -->"+params[:mcms][:pic2].inspect.to_s
     @mcms = Mcms.first
@@ -69,9 +82,8 @@ class AdminController < ApplicationController
       @mcms.save
     end
 
+if (request.patch?)
 
-
-    FileUtils.rm_rf(Dir.glob("#{@mcms[:pic1].to_s}*" ))
 
     #It uploads the banner pictures
    if(params[:mcms])
@@ -112,6 +124,8 @@ class AdminController < ApplicationController
 
 
     redirect_to admin_path
+
+    end
   end
 
 
