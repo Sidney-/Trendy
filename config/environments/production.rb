@@ -25,6 +25,12 @@ Glass::Application.configure do
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
+  # Compress JavaScripts
+  config.assets.compress = true
+  config.assets.js_compressor = Uglifier.new(
+      # Remove all console.* functions
+      :compress => { :drop_console => true }
+  ) if defined? Uglifier
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
