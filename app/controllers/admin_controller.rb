@@ -16,6 +16,29 @@ class AdminController < ApplicationController
 
   end
 
+  def EdirTermsOfService
+    @mcms = Mcms.first
+    if(Mcms.first.present?)
+      if(request.patch?)
+
+        @mcms.canccelation= params[:mcms][:canccelation] if params[:mcms][:canccelation].present?
+        @mcms.complaints = params[:mcms][:complaints] if params[:mcms][:complaints].present?
+        @mcms.payment = params[:mcms][:payment] if params[:mcms][:payment].present?
+        @mcms.returnE= params[:mcms][:returnE] if params[:mcms][:returnE].present?
+        @mcms.shippingp = params[:mcms][:shippingp] if params[:mcms][:shippingp].present?
+        @mcms.saboutus = params[:mcms][:saboutus] if params[:mcms][:saboutus].present?
+
+
+
+        @mcms.save!
+        redirect_to admin_path
+
+
+
+      end
+    end
+    end
+
   def EditContact
     @mcms = Mcms.first
     if(Mcms.first.present?)

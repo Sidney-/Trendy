@@ -1,0 +1,39 @@
+<div id="tops-wrapper">
+  <div id="tos-container">
+    <%= form_for @mcms ,url: admin_Edit_path do |f| %>
+        <li>
+          <%= f.label "ABOUT US:" %><br>
+          <%= f.text_area :saboutus, value:@mcms.saboutus, size:"35" %>
+        </li>
+
+        <li>
+          <%= f.label "Payment :" %><br>
+          <%= f.text_area :payment, value:@mcms.payment, size:"35" %>
+        </li>
+
+        <li>
+          <%= f.label "Shipping Policies :" %><br>
+          <%= f.text_area :shippingp, value:@mcms.shippingp, size:"35" %>
+        </li>
+
+        <li>
+          <%= f.label "Returns and Exchanges :" %><br>
+          <%= f.text_area :returnE, value:@mcms.returnE, size:"35" %>
+        </li>
+
+        <li>
+          <%= f.label "ACancellation :" %><br>
+          <%= f.text_area :canccelation, value:@mcms.canccelation, size:"35" %>
+        </li>
+
+        <li>
+          <%= f.label "Complaints :" %><br>
+          <%= f.text_area :complaints, value:@mcms.complaints, size:"35" %>
+        </li>
+
+
+
+        <div id="save-box"><%=f.submit "save" %></div>
+    <% end %>
+  </div>
+</div>

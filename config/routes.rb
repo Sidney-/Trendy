@@ -16,6 +16,7 @@ Glass::Application.routes.draw do
   match "/admin/EaboutmeSave", to:"admin#EaboutmeSave", via: :post
   match "/admin/Cbimage", to:"admin#Cbimage", via: [:get,:post,:patch]
   match "/admin/EditContact", to:"admin#EditContact", via: [:get,:post,:patch]
+  match "/admin/Edit", to:"admin#EdirTermsOfService", via: [:get,:post,:patch]
 
 
   # if Rails.env.production?
