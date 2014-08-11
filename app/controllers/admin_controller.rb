@@ -18,6 +18,18 @@ class AdminController < ApplicationController
 
   def EdirTermsOfService
     @mcms = Mcms.first
+    #initialize
+    @mcms.canccelation= "EMPTY" if @mcms.canccelation.nil?
+    @mcms.complaints = "EMPTY" if  @mcms.complaints.nil?
+    @mcms.payment = "EMPTY" if     @mcms.payment.nil?
+    @mcms.returnE= "EMPTY" if      @mcms.returnE.nil?
+    @mcms.shippingp = "EMPTY" if   @mcms.shippingp.nil?
+    @mcms.saboutus = "EMPTY" if    @mcms.saboutus.nil?
+    @mcms.iphone= "EMPTY" if       @mcms.iphone.nil?
+    @mcms.imail = "EMPTY" if       @mcms.imail.nil?
+    @mcms.iaddress = "EMPTY" if    @mcms.iaddress.nil?
+
+
     if(Mcms.first.present?)
       if(request.patch?)
 
@@ -151,5 +163,10 @@ if (request.patch?)
     end
   end
 
+def clearNews
+
+  Newsletter.delete_all
+  redirect_to admin_path
+end
 
 end
