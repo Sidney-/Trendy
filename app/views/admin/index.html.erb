@@ -1,9 +1,9 @@
-
-
-    <ul>
-      <li><%= link_to"View Newsletters", controller: "admin", action: "newsletterReport" %></li>
-      <li><%= link_to "Edit About ME" ,controller: "admin", action: "Eaboutme" %></li>
-      <li><%= link_to "Edit Contact Details" ,controller: "admin", action: "EditContact" %></li>
-      <li><%= link_to "Change Top Banner Images", controller: "admin", action: "Cbimage" %></li>
-      <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
-    </ul>
+<div id="backend-wrapper">
+  <div id="backend-container">
+    <div id="backend-menu"><%= link_to"View Subscriptions", controller: "admin", action: "newsletterReport" %></div>
+    <div id="backend-menu"><%= link_to "Edit About ME" ,controller: "admin", action: "Eaboutme" %></div>
+    <div id="backend-menu"><%= link_to "Edit Contact Details" ,controller: "admin", action: "EditContact" %></div>
+    <div id="backend-menu"><%= link_to "Edit Banner Images", controller: "admin", action: "Cbimage" %></div>
+    <div id="backend-menu"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></div>
+  </div>
+</div>

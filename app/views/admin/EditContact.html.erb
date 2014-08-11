@@ -1,16 +1,22 @@
-<%= form_for @mcms ,url: admin_EditContact_path do |f| %>
+<div id="contact-wrapper">
+  <div id="contact-container">
+        <%= form_for @mcms ,url: admin_EditContact_path do |f| %>
+            <li>
+                <%= f.label "Telephone:" %><br>
+                <%= f.text_field :phone, value:@mcms.iphone, size:"35" %>
+            </li>
 
-    <li>
-<%= f.label "Telephone:" %>
-<%= f.text_field :phone, value:@mcms.iphone %>
-    </li>
-    <li>
-<%= f.label "Address:" %>
-<%= f.text_field :address, value:@mcms.iaddress, size:"50" %>
-    </li>
-    <li>
-      <%= f.label "Email :" %>
-      <%= f.text_field :email, value:@mcms.imail, size:"50" %>
-    </li>
-    <%=f.submit "save" %>
-<% end %>
+            <li>
+                <%= f.label "Address:" %><br>
+                <%= f.text_field :address, value:@mcms.iaddress, size:"35" %>
+            </li>
+
+            <li>
+                <%= f.label "Email :" %><br>
+                <%= f.text_field :email, value:@mcms.imail, size:"35" %>
+            </li>
+
+           <div id="save-box"><%=f.submit "save" %></div>
+        <% end %>
+    </div>
+</div>

@@ -1,14 +1,13 @@
+<div id="newsletter-wrapper">
+  <div id="newsletter-container">
 
+    <% @reports.each do |report| %>
+        <h1><%= report[:name]%></h1><h2><%= report[:mail] %></h2>
+    <% end %>
 
-<%= link_to 'Export as Excel ', "NewsReport.xls" %>
+    <br><br>
+    <%= link_to 'Export as Excel ', "NewsReport.xls" %><br>
+    <%= link_to 'Back to Panel', admin_path %>
 
-
-<% @reports.each do |report| %>
-
-    <h1>  <%= report[:name]%> ----- <%= report[:mail] %></h1>
-
-
-<% end %>
-
-
-<%= link_to 'Back to Panel', admin_path %>
+    </div>
+</div>

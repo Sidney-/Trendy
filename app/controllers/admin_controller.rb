@@ -10,7 +10,7 @@ class AdminController < ApplicationController
 
 
          @bodyy= Mcms.first.body
-         render layout: false
+         #render layout: false
 
 
 

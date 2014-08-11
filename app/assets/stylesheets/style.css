@@ -404,7 +404,6 @@ nav a#pull {
     height: 1000px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 #brands-container{
@@ -564,8 +563,163 @@ nav a#pull {
 }
 
 
-@media screen and (max-width: 1100px) {
+/*************************     Backend CSS     *********************************/
 
+#backend-wrapper{
+    width: 100%;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -40px;
+    box-shadow: 0 0 2px #000;
+}
+
+#backend-container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+#backend-menu{/*admin index boxes*/
+    overflow: hidden;
+    width: 300px;
+    height: 80px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 0 2px #000;
+    float: left;
+}
+
+#backend-menu a{
+    margin-left: 20px;
+    color: #fff;
+    font-size: 35px;
+    font-family: "Champagne & Limousines";
+    text-decoration: none;
+}
+
+#newsletter-wrapper{
+    width: 100%;
+    max-width: 990px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    box-shadow: 0 0 2px #000;
+    margin-bottom: -40px;
+}
+
+#newsletter-container{
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+}
+
+#newsletter-container h1{
+    color: #33ccff;
+    font-size: 22px;
+    font-family: arial, sans-serif;
+ }
+
+#newsletter-container h2{
+    font-size: 18px;
+    font-family: "Helvetica Neue Light";
+    padding-bottom: 15px;
+}
+
+#contact-wrapper{
+    width: 100%;
+    max-width: 990px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #333;
+    box-shadow: 0 0 2px #000;
+    margin-bottom: -40px;
+}
+
+#contact-container{
+    width: 100%;
+    max-width: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    color: #fff;
+    background-color: #333;
+}
+
+#contact-container li{
+    margin-bottom: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#save-box{
+    width: 75px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#banner-wrapper{
+    width: 100%;
+    max-width: 990px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    box-shadow: 0 0 2px #000;
+    margin-bottom: -40px;
+}
+
+#banner-container{
+    width: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+}
+
+#banner-container h1{
+    font-size: 15px;
+    font-family: arial, sans-serif;
+}
+
+#about-edit-wrapper{
+    width: 100%;
+    max-width: 990px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    box-shadow: 0 0 2px #000;
+    margin-bottom: -40px;
+}
+
+#about-edit-container{
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+}
+
+/*************************      End Backend CSS     ****************************/
+
+@media screen and (max-width: 1100px) {
     #box-center {
         margin-left: 5%;
     }
@@ -594,6 +748,15 @@ nav a#pull {
         width: 660px;
         margin-left: auto;
         margin-right: auto;
+    }
+    #backend-container{
+        width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #backend-menu{
+        margin-left: 0px;
+        margin-right: 30px;
     }
 }
 
@@ -667,6 +830,9 @@ nav a#pull {
         margin-right: 0px;
     }
     #brands-container{
+        width: 300px;
+    }
+    #backend-container{
         width: 300px;
     }
 
@@ -791,7 +957,7 @@ nav a#pull {
         position: relative;
     }
     nav a#pull:after {
-        content:"";
+        content: "";
         background: url('nav-icon.png') no-repeat;
         width: 30px;
         height: 30px;
@@ -800,17 +966,14 @@ nav a#pull {
         right: 15px;
         top: 5px;
     }
-
     #logo{
         margin-bottom: -500px;
         margin-left: 3%;
         background-image:url("logosmall.png");
     }
-
     #yelpwidget{
         margin-right: 14%;
     }
-
     #yelp-logo{
         display: none;
     }
@@ -838,6 +1001,9 @@ nav a#pull {
     }
     #top-banner-text-small {
         padding-left: 2%;
+    }
+    #newsletter-container{
+        margin-left: 30px;
     }
 }
 

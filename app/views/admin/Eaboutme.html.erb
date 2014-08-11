@@ -1,9 +1,16 @@
-<h1> EDIT ABOUT ME PAGE </h1>
+<div id="about-edit-wrapper">
+  <div id="about-edit-container">
 
-<%= form_tag('/admin/EaboutmeSave') do -%>
-        <%=text_area(:post, :body, cols: 200, rows: 50,value:@bodyy) %>
-                   </br>
+    <h1> EDIT ABOUT ME </h1>
+
+    <%= form_tag('/admin/EaboutmeSave') do -%>
+
+        <%=text_area(:post, :body, cols: 100, rows: 25,value:@bodyy) %></br>
         <div><%= submit_tag 'Save' %></div>
-<% end -%>
 
-<%= link_to 'Back to Panel', admin_path %>
+    <% end -%>
+
+    <%= link_to 'Back to Panel', admin_path %>
+
+    </div>
+</div>
