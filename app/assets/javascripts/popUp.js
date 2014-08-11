@@ -16,6 +16,18 @@ $(document).ready(function() {
         $('#popi').addClass ("pppp");
     });
 
+});
+
+
+$(function(){
+    var pop = function(){
+        $('#screen').css({ opacity: 0.7, 'width':$(document).width(),'height':$(document).height()});
+        $('body').css({'overflow':'auto'});
+        $('#box').css({'display': 'block'});
+    }
+    $('#mail-list').click(pop);
+
+
     var slider = $('#slider').leanSlider({
         directionNav: '#slider-direction-nav',
         controlNav: '#slider-control-nav'
