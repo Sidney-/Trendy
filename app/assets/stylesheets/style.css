@@ -60,7 +60,7 @@ header{
     padding-left: 8px;
     font-family: "Champagne & Limousines";
     padding-top: 15px;
-    font-size: 19px;
+    font-size: 17px;
     color: #333;
     letter-spacing: 4px;
     position: relative;
@@ -721,6 +721,38 @@ text-align: center;
     font-family: arial, sans-serif;
 }
 
+#tos-wrapper{
+    width: 100%;
+    max-width: 990px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #333;
+    box-shadow: 0 0 2px #000;
+    margin-bottom: -40px;
+}
+
+#tos-container{
+    width: 100%;
+    max-width: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    color: #fff;
+    background-color: #333;
+}
+
+#tos-container li{
+    margin-bottom: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*************************      End Backend CSS     ****************************/
 
 @media screen and (max-width: 1100px) {
@@ -786,6 +818,49 @@ text-align: center;
     #box-right-top{
         margin-left: 6%;
     }
+
+    #popi{
+        top: 220px;
+    }
+    .pppp{
+        height: 300px;
+        width: 500px;
+        background-size: 100% 100%;
+        background-image: url("EmailCardBig.png");
+    }
+    .toptext{
+        margin-left: 35px;
+        font-size: 35px;
+        margin-top: -20px;
+    }
+    .bottomtext{
+        margin-left: 40px;
+        margin-bottom: 30px;
+        font-size: 25px;
+        font-family: "Champagne & Limousines";
+        color: #f89925;
+    }
+    .nameinput{
+        width: 200px;
+        margin-left: 55px;
+        margin-top: -25px;
+    }
+    .mailinput{
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 55px;
+    }
+    .inputfields{
+        width: 300px;
+        margin-top: 50px;
+    }
+    .joinbutton{
+        margin-left: 105px;
+    }
+    #x-button{
+        margin-left: 490px;
+        margin-bottom: 5px;
+    }
 }
 
 @media screen and (max-width: 840px){
@@ -839,7 +914,10 @@ text-align: center;
     #backend-container{
         width: 300px;
     }
-
+    #x-button{
+        margin-top: -200px;
+        margin-left: 490px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -906,7 +984,12 @@ text-align: center;
         visibility: hidden;
     }
     #top-banner-text-small{
+        margin-top: -20px;
         visibility: visible;
+    }
+    #x-button{
+        margin-bottom: 15px;
+        margin-left: 490px;
     }
 }
 
@@ -933,16 +1016,13 @@ text-align: center;
     }
     #box-right-bottom{
         width: 100%;
-        margin-top: 20px;
+        margin-top: 18px;
         margin-left: 0%;
-    }
-    #top-banner-text-small{
-        width: 100%;
-        margin-top: -45px;
     }
     #top-banner-text-small {
         padding-left: 11%;
         font-size: 18px;
+        margin-top: -40px
     }
 }
 
@@ -1008,6 +1088,55 @@ text-align: center;
     }
     #newsletter-container{
         margin-left: 30px;
+    }
+    #popi{
+        top: 250px;
+    }
+
+    .pppp{
+        height: 200px;
+        width: 300px;
+        background-size: 100% 100%;
+        background-image: url("EmailCardBig.png");
+    }
+
+    .toptext{
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .bottomtext{
+        margin-left: 5px;
+        margin-bottom: -20px;
+        font-size: 12px;
+    }
+
+    .nameinput{
+        width: 150px;
+        margin-left: -10px;
+        margin-top: -75px;
+    }
+    .mailinput{
+        width: 150px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        margin-left: -10px;
+    }
+    .inputfields{
+        width: 200px;
+        margin-top: -80px;
+        margin-left: 70px;
+    }
+    .joinbutton{
+        margin-left: 30px;
+        margin-top: 0px;
+        width: 70px;
+        height: 30px;
+    }
+    #x-button{
+        margin-left: 295px;
+        margin-bottom: 75px;
     }
 }
 

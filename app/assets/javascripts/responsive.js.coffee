@@ -1,5 +1,3 @@
-
-
 ready =  ->
   $('#pull').on 'click' , =>
     pull 		= $('#pull');
