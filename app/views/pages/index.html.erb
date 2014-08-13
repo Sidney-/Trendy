@@ -19,7 +19,7 @@
         <div id="slider">
 
           <%  @AllSliders.each do |item| %>
-              <%= image_tag "Sliders/#{item}"%>
+              <%= image_tag "#{item.gsub("app/assets/images/", "")}"%>
           <% end %>
 
         </div>

@@ -7,7 +7,7 @@
     <div id="brands-container">
         <%  @AllBrands.each_with_index do |item, index| %>
             <div id="brand<%=index%3+1 %>">
-                <%= image_tag "Brands/#{item}"%>
+                <%= image_tag "#{item.gsub("app/assets/images/", "")}"%>
             </div>
         <% end  %>
     </div>

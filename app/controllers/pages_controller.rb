@@ -2,9 +2,8 @@ require 'Aeditor'
 class PagesController < ApplicationController
 
 def index
+
   @AllSliders = Dir.glob("app/assets/images/Sliders/*.jpg")
-
-
 end
   def location
   end
@@ -14,7 +13,6 @@ end
   end
 
   def about
-#@x = Aeditor::Meditor.hello
   @record= Mcms.first
   end
 
