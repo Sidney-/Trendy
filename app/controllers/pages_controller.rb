@@ -35,7 +35,7 @@ end
 
   def brands
 
-    @AllBrands = Dir.glob("app/assets/images/Brands/*.jpg")
+    @AllBrands = Dir.glob("app/assets/images/Brands/*.{jpg,png,gif,jpeg}")
 
 
   end
