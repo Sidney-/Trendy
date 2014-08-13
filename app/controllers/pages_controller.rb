@@ -2,8 +2,8 @@ require 'Aeditor'
 class PagesController < ApplicationController
 
 def index
-  @AllSliders = Dir.entries("app/assets/images/Sliders/")
-  @AllSliders.shift(2)
+  @AllSliders = Dir.glob("app/assets/images/Sliders/*.jpg")
+
 
 end
   def location
@@ -37,8 +37,7 @@ end
 
   def brands
 
-    @AllBrands = Dir.entries("app/assets/images/Brands/")
-    @AllBrands.shift(2)
+    @AllBrands = Dir.glob("app/assets/images/Brands/*.jpg")
 
 
   end
