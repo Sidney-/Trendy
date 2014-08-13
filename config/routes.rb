@@ -19,14 +19,13 @@ Glass::Application.routes.draw do
   match "/admin/Edit", to:"admin#EdirTermsOfService", via: [:get,:post,:patch]
   get "/admin/clear", to:"admin#clearNews"
 
-
   # if Rails.env.production?
   #  devise_for :users, :controllers => { :registrations => "registrations" }
   #else
 
- match 'users/sign_up' => redirect('/404.html'), via: :get
- match 'users' =>      redirect('/404.html'), via: :post
-match 'users/password/new' => redirect('/404.html'), via: :get
+ #match 'users/sign_up' => redirect('/404.html'), via: :get
+ #match 'users' =>      redirect('/404.html'), via: :post
+#match 'users/password/new' => redirect('/404.html'), via: :get
   devise_for :users
   #end
   root 'pages#index'
