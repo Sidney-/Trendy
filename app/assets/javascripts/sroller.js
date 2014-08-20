@@ -34,7 +34,7 @@ $(document).ready(function(){
 $( window ).resize(function() {
 
     if ($( window ).width()>0)
-    {  
+    {
         menu 		= $('nav ul');
         menu.css("display", "")
 
