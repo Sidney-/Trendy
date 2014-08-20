@@ -5,7 +5,7 @@
 <div class="inputfields">
   <div class="toptext">Join Our Mailing List!</div>
   <div class="bottomtext">No Spam, Just Great Deals
-    <%= f.text_field :name, class:"nameinput", placeholder:"name", id:"name-textfield",:'data-validation-length' =>"min4", :'data-validation'=>"length" %>
+    <%= f.text_field :name, class:"nameinput", placeholder:"name", id:"name-textfield",:'data-validation-length' =>"min1", :'data-validation'=>"length" %>
         <%= f.text_field :mail, class:"mailinput", placeholder:"e-mail address",id:"email-textfield", :'data-validation'=>"email" %><br>
             <input type="image" src="<%=asset_path('assets/JoinButton.png') %>" name="saveForm" class="joinbutton" id="join-button" />
             </div>
@@ -13,13 +13,12 @@
 </div>
 
 <% end %>
-
 <script>
     $("#x-button").bind("click", function(){
         $('#popi').hide();
         $('#screen').hide();
     })  ;
 
-    var CustomError ={badEmail :"Wrong Email",lengthTooShortStart:"SHORT"}
+    var CustomError ={badEmail :"Invalid Email",lengthTooShortStart:"Must be at least"}
     $.validate({language : CustomError});
 </script>
