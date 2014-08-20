@@ -64,11 +64,9 @@ header{
 }
 
 #top-banner-text-large {
-    width: 100%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 8px;
+
+
+   text-align: center;
     font-family: "geometria_lightlight", helvetica;
     padding-top: 15px;
     font-size: 15px;
@@ -77,20 +75,6 @@ header{
     position: relative;
 }
 
-#top-banner-text-small {
-    width: 100%;
-    max-width: 400px;
-    margin-top: -25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 45px;
-    font-family: "geometria_lightlight";
-    font-size: 14px;
-    color: #333;
-    letter-spacing: 4px;
-    position: relative;
-    visibility: hidden;
-}
 
 #content1{
     width: 100%;
@@ -998,9 +982,8 @@ text-align: center;
         font-size: 16px;
         color: #fff;
     }
-    #top-banner-text-large{
-        visibility: hidden;
-    }
+
+
     #top-banner-text-small{
         margin-top: -15px;
         visibility: visible;
