@@ -447,68 +447,66 @@ nav a#pull {
     float: left;
 }
 
-#popi {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .pppp{
-    height: 440px;
-    width: 100%;
-    max-width: 691px;
-    margin-top: -380px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    display:block;
     background-color: #444;
     z-index: 10;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url("EmailCardBig.png");
+    position:absolute;
+    height:440px;
+    width:692px;
+    right:50%;
+    top:50%;
+    margin:270px -346px 0 0;
 }
 
+
 .toptext{
-    margin-left: 25px;
+    position: relative;
+    text-align: center;
     font-size: 35px;
     font-family: "geometria_lightlight";
     color: #77cedf;
 }
 
 .bottomtext{
-    margin-left: 40px;
     margin-bottom: 30px;
+    text-align: center;
     font-size: 25px;
     font-family: "geometria_lightlight";
     color: #f89925;
 }
 
 .nameinput{
-    width: 300px;
-    margin-left: 46px;
+    width: 70%;
+    display: inline-block;
 }
 
 .mailinput{
-    width: 300px;
+    width: 70%;
     margin-top: 15px;
-    margin-left: 46px;
 }
 
 .inputfields{
     width: 400px;
-    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    padding: 13%;
 }
 
 .joinbutton{
     margin-top: 20px;
-    margin-left: 150px;
+   margin-left: auto;
 }
 
 #x-button{
-    margin-top: -100px;
-    margin-bottom: 3px;
-    margin-left: 680px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
 }
 
 #content-container {
@@ -820,48 +818,10 @@ text-align: center;
     #box-right-top{
         margin-left: 6%;
     }
-
-    #popi{
-        top: 220px;
-    }
     .pppp{
         height: 300px;
         width: 500px;
-        background-size: 100% 100%;
-        background-image: url("EmailCardBig.png");
-    }
-    .toptext{
-        margin-left: 30px;
-        font-size: 25px;
-        margin-top: -20px;
-    }
-    .bottomtext{
-        margin-left: 30px;
-        margin-bottom: 30px;
-        font-size: 20px;
-        font-family: "geometria_lightlight";
-        color: #f89925;
-    }
-    .nameinput{
-        width: 200px;
-        margin-left: 55px;
-        margin-top: -25px;
-    }
-    .mailinput{
-        width: 200px;
-        margin-top: 5px;
-        margin-left: 55px;
-    }
-    .inputfields{
-        width: 300px;
-        margin-top: 50px;
-    }
-    .joinbutton{
-        margin-left: 105px;
-    }
-    #x-button{
-        margin-left: 490px;
-        margin-bottom: 5px;
+        margin: 150px -250px 0 0 ;
     }
 }
 
@@ -915,10 +875,6 @@ text-align: center;
     }
     #backend-container{
         width: 300px;
-    }
-    #x-button{
-        margin-top: -200px;
-        margin-left: 490px;
     }
 }
 
@@ -984,24 +940,28 @@ text-align: center;
         font-size: 12px;
         color: #fff;
     }
-
-
-    #top-banner-text-small{
-        margin-top: -15px;
-        visibility: visible;
-    }
-    #popi{
-        top: 220px;
-    }
     .pppp{
         height: 250px;
         width: 450px;
-        background-size: 100% 100%;
-        background-image: url("EmailCardBig.png");
+        margin: 125px -225px 0 0;
     }
-    #x-button{
-        margin-bottom: 5px;
-        margin-left: 440px;
+    .inputfields{
+        width: 250px;
+        padding: 13%;
+    }
+    .toptext{
+        font-size: 20px;
+    }
+    .bottomtext{
+        font-size: 15px;
+    }
+    .nameinput{
+        margin-top: 10px;
+    }
+    .joinbutton{
+        margin-top: 10px;
+        width: 50px;
+        height: 25px;
     }
 }
 
@@ -1077,43 +1037,17 @@ text-align: center;
         padding-left: 14%;
         font-size: 13px;
     }
-    #popi{
-        top: 120px;
-    }
+
     .pppp{
         height: 200px;
         width: 300px;
-        background-size: 100% 100%;
-        background-image: url("EmailCardBig.png");
-    }
-    .toptext{
-        text-align: center;
-        font-size: 20px;
-        margin-top: -10px;
-    }
-    .bottomtext{
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: 0px;
-    }
-    .nameinput{
-        margin-top: 10px;
+        margin: 100px -150px 0 0 ;
     }
     .inputfields{
-        margin-top: 10px;
-        padding-top: -120px;
+        padding: 10%;
+        padding-top: 50px;
     }
-    .joinbutton{
-        margin-top: 5px;
-        margin-left: 125px;
-        height: 25px;
-        width: 65px;
-    }
-    #x-button{
-        margin-left: 290px;
-        width: 20px;
-        height: 20px;
-    }
+
 }
 
 @media only screen and (max-width : 400px) {
@@ -1123,11 +1057,6 @@ text-align: center;
     #top-banner-text-small {
         padding-left: 10%;
         margin-top: -50px;
-    }
-    #x-button{
-        padding-bottom: 30px;
-        width: 20px;
-        height: 20px;
     }
     .toptext{
         text-align: center;

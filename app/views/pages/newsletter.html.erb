@@ -1,13 +1,14 @@
 
 <%= form_for @newsletter, url: {action: "newsletterSave"}, html: {class: "nifty_form"} do |f| %>
-<%= image_tag'X.png', width:"3%", height: 'width-10',id:'x-button' %>
+<%= image_tag'X.png',id:'x-button' %>
 
 <div class="inputfields">
   <div class="toptext">Join Our Mailing List!</div>
-  <div class="bottomtext">No Spam, Just Great Deals</div>
-<%= f.text_field :name, class:"nameinput", placeholder:"name", id:"name-textfield",:'data-validation-length' =>"min4", :'data-validation'=>"length" %>
-<%= f.text_field :mail, class:"mailinput", placeholder:"e-mail address",id:"email-textfield", :'data-validation'=>"email" %>
-<input type="image" src="<%=asset_path('assets/JoinButton.png') %>" name="saveForm" class="joinbutton" id="join-button" />
+  <div class="bottomtext">No Spam, Just Great Deals
+    <%= f.text_field :name, class:"nameinput", placeholder:"name", id:"name-textfield",:'data-validation-length' =>"min4", :'data-validation'=>"length" %>
+        <%= f.text_field :mail, class:"mailinput", placeholder:"e-mail address",id:"email-textfield", :'data-validation'=>"email" %><br>
+            <input type="image" src="<%=asset_path('assets/JoinButton.png') %>" name="saveForm" class="joinbutton" id="join-button" />
+            </div>
 
 </div>
 

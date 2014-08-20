@@ -44,7 +44,7 @@ $( window ).resize(function() {
         menu.css("display", "")
 
     }
-
+    $('#screen').css({ opacity: 0.7, 'width':$(document).width(),'height':$(document).height()});
     if ($( window ).width()>640)
         $("#top-banner-text-large").text('MENTION THIS AD AND SAVE 20%! | (310) 392-0055');
     if ($( window ).width()<640)
