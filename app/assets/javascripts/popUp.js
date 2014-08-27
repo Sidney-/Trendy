@@ -3,11 +3,10 @@
  */
 $(document).ready(function() {
 
-    /* poopin up */
+    /* popping up */
     $("#mail-list").on("click",function() {
         if($('#popi').is(":hidden")){
             $('#popi').show();
-            $('#screen').show();
         }else
         $.get('/newsletter', function(data){
             $('#popi').html(data);
@@ -21,11 +20,16 @@ $(document).ready(function() {
 
 $(function(){
     var pop = function(){
-        $('#screen').css({ opacity: 0.7, 'width':$(document).width(),'height':$(document).height()});
         $('body').css({'overflow':'auto'});
         $('#box').css({'display': 'block'});
+
+        var greyScreen = $('<div></div>').attr('id', 'screen');
+        $("body").prepend(greyScreen);
+        greyScreen.fadeTo("fast",0.7) ;
     }
     $('#mail-list').click(pop);
+
+
 
 
     var slider = $('#slider').leanSlider({
