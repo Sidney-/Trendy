@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Glass: development" uuid="bc8785bd-9934-4fa9-b267-f744ff6eab94">
+      <secret-storage>memory</secret-storage>
+    </data-source>
+    <data-source name="Rails Glass: production" uuid="d0a525c8-6ea3-445d-91b0-0e74e9ae684c">
+      <secret-storage>memory</secret-storage>
+    </data-source>
+    <data-source name="Rails Glass: test" uuid="6c9a0bfa-281b-4ea4-a207-179621e50fc3">
+      <secret-storage>memory</secret-storage>
+    </data-source>
+  </component>
+</project>
